@@ -1,0 +1,13 @@
+name: Workflow Practice
+
+on: [push]
+
+jobs:
+    run-shell-commands:
+        runs-on: ubuntu-latest
+        steps: 
+            - name : version checking
+             run : 
+                node -v
+                npm -v
+        

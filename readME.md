@@ -44,3 +44,12 @@ This machine that you will maintain and have completely responsible for it.
 ### Large Runners:
 
 Github offer these runners with `more RAM & CPU` to the customers on Github Team and GitHub Enterprise Cloud plans and same tools pre installed for GitHub Hosted Runners
+
+### START
+
+1. create a file `.github/workflows/input.yaml`
+2. `on` : What events are going to triggers to run which is going to be an array of events
+3. `jobs` : It is an object and for each job we will create a key and give a name to that job
+4. `runs-on` : each job will run in own runner machine and each machine has own OS
+5. `steps` : We define our steps which is going to be an array of objects. we use `-` (dash) to create an array. Each object can contain a name for step. 
+6. `run` :  We need to run the shell command 
