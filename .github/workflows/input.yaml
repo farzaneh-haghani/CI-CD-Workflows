@@ -7,5 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: version checking
-        run: node -v
+        run: |
+          node -v
           npm -v
